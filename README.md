@@ -28,4 +28,4 @@ The stack comprises:
 
 Whenever you use these files to create data solutions to store or analyze personal data with the consent of its owners, remember to do some additional research and implement the security measures and data protection standards required for your specific project (e.g. industry-related guidelines or GDPR). 
 
-It is highly recommended that you implement data anonymization and encryption techniques and make sure that you understand how data flows across entry points, systems, databases, data lakes, data warehouses, cloud instances, BI dashboards, ML models, etc.
+It is highly recommended that you implement data anonymization in certain situations, as well as encryption techniques. Make sure that you understand how data flows across entry points, systems, databases, data lakes, data warehouses, cloud instances, BI dashboards, ML models, etc.

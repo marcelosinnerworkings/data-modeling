@@ -11,8 +11,6 @@ CREATE TABLE "public.Socios" (
   OIDS=FALSE
 );
 
-
-
 CREATE TABLE "public.Pilotos" (
 	"id_brevet" serial(20),
 	"fk_socio" integer(20) NOT NULL,
@@ -20,8 +18,6 @@ CREATE TABLE "public.Pilotos" (
 ) WITH (
   OIDS=FALSE
 );
-
-
 
 CREATE TABLE "public.Alunos" (
 	"id_aluno" serial(10),
@@ -31,8 +27,6 @@ CREATE TABLE "public.Alunos" (
 ) WITH (
   OIDS=FALSE
 );
-
-
 
 CREATE TABLE "public.Instrutores" (
 	"id_instrutor" serial(20) NOT NULL,
@@ -45,8 +39,6 @@ CREATE TABLE "public.Instrutores" (
 ) WITH (
   OIDS=FALSE
 );
-
-
 
 CREATE TABLE "public.Saidas" (
 	"id_saida" serial(10) NOT NULL,
@@ -62,19 +54,9 @@ CREATE TABLE "public.Saidas" (
 );
 
 
-
-
 ALTER TABLE "Pilotos" ADD CONSTRAINT "Pilotos_fk0" FOREIGN KEY ("fk_socio") REFERENCES "Socios"("id_socio");
-
 ALTER TABLE "Alunos" ADD CONSTRAINT "Alunos_fk0" FOREIGN KEY ("fk_socio") REFERENCES "Socios"("id_socio");
-
 ALTER TABLE "Instrutores" ADD CONSTRAINT "Instrutores_fk0" FOREIGN KEY ("fk_socio") REFERENCES "Socios"("id_socio");
 ALTER TABLE "Instrutores" ADD CONSTRAINT "Instrutores_fk1" FOREIGN KEY ("fk_brevet") REFERENCES "Pilotos"("id_brevet");
-
 ALTER TABLE "Saidas" ADD CONSTRAINT "Saidas_fk0" FOREIGN KEY ("fk_aluno") REFERENCES "Alunos"("id_aluno");
-
-
-
-
-
 

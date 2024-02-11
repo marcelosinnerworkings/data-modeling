@@ -43,14 +43,11 @@ CREATE TABLE `Saidas` (
 	PRIMARY KEY (`id_saida`)
 );
 
+
 ALTER TABLE `Pilotos` ADD CONSTRAINT `Pilotos_fk0` FOREIGN KEY (`fk_socio`) REFERENCES `Socios`(`id_socio`);
-
 ALTER TABLE `Alunos` ADD CONSTRAINT `Alunos_fk0` FOREIGN KEY (`fk_socio`) REFERENCES `Socios`(`id_socio`);
-
 ALTER TABLE `Instrutores` ADD CONSTRAINT `Instrutores_fk0` FOREIGN KEY (`fk_socio`) REFERENCES `Socios`(`id_socio`);
-
 ALTER TABLE `Instrutores` ADD CONSTRAINT `Instrutores_fk1` FOREIGN KEY (`fk_brevet`) REFERENCES `Pilotos`(`id_brevet`);
-
 ALTER TABLE `Saidas` ADD CONSTRAINT `Saidas_fk0` FOREIGN KEY (`fk_aluno`) REFERENCES `Alunos`(`id_aluno`);
 
 

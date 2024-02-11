@@ -13,4 +13,9 @@ Saving SQL DDL scripts and data modeling files that provide a high-level vision 
 The stack comprises:
 
 * SQL
-* DB Designer (https://www.dbdesigner.net/)
+* [DB Designer](https://www.dbdesigner.net/)
+* [dbdiagram.io](https://dbdiagram.io/)
+
+## What are the contents?
+
+* **pilot-course-relational-schema:** a relational, traditional database schema for information related to a pilot course, including columns about flight partners, pilots, instructors, students, and classes (in Portuguese);

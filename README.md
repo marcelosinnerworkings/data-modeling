@@ -12,9 +12,9 @@ Saving SQL DDL scripts and data modeling files that provide a high-level vision 
 
 * **pilot-course-relational-schema:** a relational, traditional database schema for information related to a pilot course, including columns about flight club members, pilots, instructors, students, and classes (in Portuguese);
 
-* **sales-star-schema:** a simple star schema for information related to business sales, including products, locations, and time (in English);
+* **sales-star-schema:** a simple star schema for information related to business sales, including products, locations, and time;
 
-* **location-based-service-nosql:** while it is unusual to define a NoSQL database structure as a rigid schema, as opposed to a traditional schema we could define in a relational (SQL) database, this repo provides a certain blueprint for MongoDB queries that create a document collection in a location-base service, including information about personal information, purchase patterns, and geographic coordinates (in English);
+* **location-based-service-nosql:** while it is unusual to define a NoSQL database structure as a rigid schema, as opposed to a traditional schema we could define in a relational (SQL) database, this repo provides a certain blueprint for MongoDB queries that create a document collection in a location-base service, including information about personal information, purchase patterns, and geographic coordinates;
 
 * **apache-nifi-template-with-python-script:** a template for a data pipeline in Apache NiFi, fetching data from a PostgreSQL database, transforming it according to a Python script, and re-inserting the transformed data into a MySQL database. 
 

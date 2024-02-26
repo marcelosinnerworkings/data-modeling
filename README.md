@@ -2,11 +2,11 @@
 
 ## What is it?
 
-To sum up, this repository contains data modeling stuff: diagrams, SQL scripts, and other files that might be useful in the creation or restoration of databases. 
+To sum up, this repository contains data modeling stuff: diagrams, SQL scripts, JSON and XML files, and other artifacts that might be useful in the creation or restoration of databases and data pipelines. 
 
 ## Why?
 
-Saving SQL DDL scripts and data modeling files that provide a high-level vision of databases is particularly useful - not only for obvious backup reasons, but also to use them as a blueprint/template for new databases and business needs.
+Saving SQL DDL scripts and data modeling files that provide a high-level vision of databases is particularly useful - not only for obvious backup reasons, but also to use them as a blueprint/template for new databases, data pipelines, and business needs.
 
 ## What are the contents?
 
@@ -14,13 +14,20 @@ Saving SQL DDL scripts and data modeling files that provide a high-level vision 
 
 * **sales-star-schema:** a simple star schema for information related to business sales, including products, locations, and time (in English);
 
-* **location-based-service-nosql:** while it is unusual to define a NoSQL database structure as a rigid schema, as opposed to a traditional schema we could define in a relational (SQL) database, this repo provides a certain blueprint for MongoDB queries that create a document collection in a location-base service, including information about personal information, purchase patterns, and geographic coordinates (in English).
+* **location-based-service-nosql:** while it is unusual to define a NoSQL database structure as a rigid schema, as opposed to a traditional schema we could define in a relational (SQL) database, this repo provides a certain blueprint for MongoDB queries that create a document collection in a location-base service, including information about personal information, purchase patterns, and geographic coordinates (in English);
+
+* **apache-nifi-template-with-python-script:** a template for a data pipeline in Apache NiFi, fetching data from a PostgreSQL database, transforming it according to a Python script, and re-inserting the transformed data into a MySQL database. 
 
 ## What is the tech stack?
 
 The stack comprises:
 
 * SQL
+* XML
+* JSON
+* [Apache NiFi](https://nifi.apache.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [MySQL](https://www.mysql.com/)
 * [DB Designer](https://www.dbdesigner.net/)
 * [dbdiagram.io](https://dbdiagram.io/)
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template>
+    <description>A template to fetch data from PostgreSQL, transform it using Python, and insert into MySQL</description>
+    <processors>
+        <processor>
+            <id>GetDatabaseTable</id>
+            <type>org.apache.nifi.processors.sql.GetTableData</type>
+            <properties>
+                <property name="Database Connection Pooling Service">YourPostgreSQLService</property>
+                <!-- You might want to insert other necessary properties here -->
+            </properties>
+        </processor>
+        <processor>
+            <id>ExecuteScript</id>
+            <type>org.apache.nifi.script.ExecuteScript</type>
+            <properties>
+                <property name="Script Engine">python</property>
+                <property name="Script File" displayName="Script File">/directory/of/your/sample_python_script.py</property>
+                <!-- You might want to insert other necessary properties here -->
+            </properties>
+        </processor>
+        <processor>
+            <id>PutDatabaseRecord</id>
+            <type>org.apache.nifi.processors.sql.PutSQL</type>
+            <properties>
+                <property name="Database Connection Pooling Service">YourMySQLService</property>
+                <!-- You might want to insert other necessary properties here -->
+            </properties>
+        </processor>
+    </processors>
+    <!-- Don't forget to add here the PostgreSQL and MySQL connections between processors -->
+</template>
